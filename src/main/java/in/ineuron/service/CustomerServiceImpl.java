@@ -1,5 +1,7 @@
 package in.ineuron.service;
 
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,6 +24,7 @@ public class CustomerServiceImpl implements ICustomerService {
 
 	@Override
 	public void saveCustomer(Customer customer) {
+		customer.setDate(LocalDate.now());
 		repo.save(customer);
 	}
 

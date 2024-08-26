@@ -1,5 +1,7 @@
 package in.ineuron.model;
 
+
+import java.time.LocalDate;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,4 +21,6 @@ public class Customer {
 	private String firstName;
 	private String lastName;
 	private String email;
+	private String phone;
+	private LocalDate date;
 }
